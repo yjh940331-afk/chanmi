@@ -31,7 +31,7 @@ export function BrandMark({ compact = false, size = 'md', className }: BrandMark
             d="M12 20.5C11.6 20.5 11.2 20.36 10.9 20.08C6.9 16.6 3.5 13.64 3.5 9.9C3.5 7.3 5.5 5.3 8 5.3C9.5 5.3 11 6.05 12 7.35C13 6.05 14.5 5.3 16 5.3C18.5 5.3 20.5 7.3 20.5 9.9C20.5 13.64 17.1 16.6 13.1 20.08C12.8 20.36 12.4 20.5 12 20.5Z"
             fill="currentColor"
           />
-          <circle cx="8.6" cy="9.6" r="1.15" fill="#fbf8f6" opacity="0.85" />
+          <circle cx="8.6" cy="9.6" r="1.15" fill="#fffbfa" opacity="0.85" />
         </svg>
       </span>
       {!compact ? (

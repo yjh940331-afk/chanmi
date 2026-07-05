@@ -7,7 +7,7 @@
   font-family:
     Pretendard, Inter, ui-sans-serif, system-ui, "Apple SD Gothic Neo",
     "Noto Sans KR", sans-serif;
-  background: #f5ece7;
+  background: #fff0f3;
 }
 
 html {
@@ -18,12 +18,12 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
-  color: #2b2622;
+  color: #2a2320;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   background:
-    radial-gradient(circle at 88% -6%, rgba(201, 117, 139, 0.08), transparent 34%),
-    linear-gradient(180deg, #fbf8f6 0%, #f7efe9 46%, #fbf8f6 100%);
+    radial-gradient(circle at 88% -6%, rgba(255, 134, 172, 0.08), transparent 34%),
+    linear-gradient(180deg, #fffbfa 0%, #fff3f6 46%, #fffbfa 100%);
 }
 
 h1,
@@ -33,8 +33,8 @@ h3 {
 }
 
 body::selection {
-  background: #e7c9ce;
-  color: #2b2622;
+  background: #ffd0dc;
+  color: #2a2320;
 }
 
 button,
@@ -107,14 +107,14 @@ img {
 
 .stage-noise {
   background-image:
-    linear-gradient(90deg, rgba(201, 117, 139, 0.05), transparent 40%, rgba(231, 201, 206, 0.06) 66%, transparent 92%);
+    linear-gradient(90deg, rgba(255, 134, 172, 0.05), transparent 40%, rgba(255, 208, 220, 0.06) 66%, transparent 92%);
 }
 
 .brand-mark {
   isolation: isolate;
   background-image:
     radial-gradient(circle at 30% 24%, rgba(255, 255, 255, 0.55), transparent 46%),
-    linear-gradient(140deg, #c9758b 0%, #b06882 54%, #8e6b84 100%);
+    linear-gradient(140deg, #ff86ac 0%, #f56d99 54%, #ef5a88 100%);
 }
 
 .depth-card {
@@ -127,10 +127,10 @@ img {
 
 @media (hover: hover) {
   .depth-card:hover {
-    border-color: rgba(166, 90, 114, 0.28);
+    border-color: rgba(239, 90, 136, 0.28);
     box-shadow:
       0 14px 34px rgba(43, 38, 34, 0.1),
-      0 6px 16px rgba(166, 90, 114, 0.08);
+      0 6px 16px rgba(239, 90, 136, 0.08);
     transform: translateY(-3px);
   }
 }
@@ -150,7 +150,7 @@ img {
   isolation: isolate;
   overflow: hidden;
   background-image:
-    linear-gradient(140deg, rgba(255, 255, 255, 0.92), rgba(245, 236, 231, 0.82));
+    linear-gradient(140deg, rgba(255, 255, 255, 0.92), rgba(255, 243, 246, 0.82));
 }
 
 .fan-ticket::after {
@@ -158,7 +158,7 @@ img {
   position: absolute;
   inset: 8px;
   z-index: -1;
-  border: 1px dashed rgba(166, 90, 114, 0.16);
+  border: 1px dashed rgba(239, 90, 136, 0.16);
   border-radius: 8px;
 }
 
@@ -178,8 +178,8 @@ img {
   inset: 0;
   z-index: -1;
   background:
-    radial-gradient(circle at 22% 16%, rgba(231, 201, 206, 0.24), transparent 40%),
-    linear-gradient(140deg, rgba(255, 255, 255, 0.92), rgba(245, 236, 231, 0.7));
+    radial-gradient(circle at 22% 16%, rgba(255, 208, 220, 0.24), transparent 40%),
+    linear-gradient(140deg, rgba(255, 255, 255, 0.92), rgba(255, 243, 246, 0.7));
 }
 
 .stream-panel {
@@ -194,8 +194,8 @@ img {
   inset: 0;
   z-index: -1;
   background:
-    radial-gradient(circle at 82% 14%, rgba(201, 117, 139, 0.1), transparent 38%),
-    linear-gradient(140deg, rgba(255, 255, 255, 0.94), rgba(245, 236, 231, 0.78));
+    radial-gradient(circle at 82% 14%, rgba(255, 134, 172, 0.1), transparent 38%),
+    linear-gradient(140deg, rgba(255, 255, 255, 0.94), rgba(255, 243, 246, 0.78));
 }
 
 .stream-equalizer span {
@@ -203,7 +203,7 @@ img {
   width: 3px;
   height: 12px;
   border-radius: 999px;
-  background: #a65a72;
+  background: #ef5a88;
   animation: chanmi-eq 1000ms ease-in-out infinite;
 }
 
@@ -241,12 +241,12 @@ img {
 @keyframes chanmi-pulse {
   0%,
   100% {
-    box-shadow: 0 0 0 0 rgba(166, 90, 114, 0.28);
+    box-shadow: 0 0 0 0 rgba(239, 90, 136, 0.28);
     opacity: 1;
   }
 
   50% {
-    box-shadow: 0 0 0 5px rgba(166, 90, 114, 0);
+    box-shadow: 0 0 0 5px rgba(239, 90, 136, 0);
     opacity: 0.7;
   }
 }
@@ -278,5 +278,5 @@ img {
 }
 
 .focus-ring:focus-visible {
-  box-shadow: 0 0 0 3px rgba(201, 117, 139, 0.32);
+  box-shadow: 0 0 0 3px rgba(255, 134, 172, 0.32);
 }

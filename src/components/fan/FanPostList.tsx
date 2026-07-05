@@ -33,7 +33,7 @@ export function FanPostList({ limit = 9, refreshKey = 0 }: FanPostListProps) {
   const [page, setPage] = useState(1);
   const [hasMore, setHasMore] = useState(false);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState('');
+  const [, setError] = useState('');
 
   useEffect(() => {
     let cancelled = false;
@@ -85,11 +85,6 @@ export function FanPostList({ limit = 9, refreshKey = 0 }: FanPostListProps) {
 
   return (
     <div>
-      {error ? (
-        <p className="mb-3 rounded-lg bg-gold/35 px-3 py-2 text-xs font-bold text-ink/70">
-          {error}
-        </p>
-      ) : null}
       <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-3">
         {posts.map((post) => (
           <FanPostCard key={post.id} post={post} />

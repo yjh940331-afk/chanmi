@@ -20,7 +20,7 @@ const socialLinks = [
 
 export function Sidebar() {
   return (
-    <aside className="fixed bottom-0 left-0 top-[56px] z-40 hidden w-[72px] border-r border-cherry/20 bg-paper/90 text-ink shadow-[8px_0_30px_rgba(166,90,114,0.08)] backdrop-blur-xl lg:flex lg:flex-col lg:items-center lg:justify-between lg:py-3">
+    <aside className="fixed bottom-0 left-0 top-[56px] z-40 hidden w-[72px] border-r border-cherry/20 bg-paper/90 text-ink shadow-[8px_0_30px_rgba(239,90,136,0.08)] backdrop-blur-xl lg:flex lg:flex-col lg:items-center lg:justify-between lg:py-3">
       <div className="flex flex-col items-center gap-3">
         <NavLink to="/" className="focus-ring rounded-lg" aria-label={site.brand}>
           <BrandMark compact size="sm" />
@@ -51,7 +51,7 @@ export function Sidebar() {
         </nav>
       </div>
 
-      <div className="flex flex-col items-center gap-2 rounded-lg border border-cherry/10 bg-paper p-2 shadow-[0_10px_24px_rgba(166,90,114,0.08)]">
+      <div className="flex flex-col items-center gap-2 rounded-lg border border-cherry/10 bg-paper p-2 shadow-[0_10px_24px_rgba(239,90,136,0.08)]">
         <Sparkles aria-hidden className="h-4 w-4 text-cherry sparkle-badge" />
         <div className="h-14 w-px bg-gradient-to-b from-cherry via-blush to-transparent" />
         <span className="-rotate-90 whitespace-nowrap text-[9px] font-semibold text-cherry">CHANMI</span>

@@ -1,10 +1,10 @@
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { latestVideos } from '../../content/videos';
+import { videoFeed } from '../../content/homeFeed';
 import { VideoCard } from '../videos/VideoCard';
 
 export function VideoPreview() {
-  const featured = latestVideos.slice(0, 12);
+  const featured = videoFeed;
 
   return (
     <section className="bg-paper py-7 text-ink">

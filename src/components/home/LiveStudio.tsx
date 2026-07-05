@@ -1,5 +1,5 @@
 import { BarChart3, Bell, Clapperboard, Flame, Heart, MessageCircle, Mic2, Radio, Sparkles, Zap } from 'lucide-react';
-import { latestVideos } from '../../content/videos';
+import { liveFeed } from '../../content/homeFeed';
 import { site } from '../../content/site';
 import { SmartImage } from '../media/SmartImage';
 
@@ -17,12 +17,12 @@ const studioStats = [
 ];
 
 export function LiveStudio() {
-  const main = latestVideos[0];
-  const clips = latestVideos.slice(1, 4);
+  const main = liveFeed[0];
+  const clips = liveFeed.slice(1, 4);
 
   return (
     <section className="relative overflow-hidden bg-paper py-6 text-ink">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_16%,rgba(201,117,139,.24),transparent_26%),linear-gradient(135deg,#fbf8f6_0%,#f5ece7_46%,#ffffff_100%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_16%,rgba(255,134,172,.24),transparent_26%),linear-gradient(135deg,#fffbfa_0%,#fff0f3_46%,#ffffff_100%)]" />
       <div className="stage-noise absolute inset-0 opacity-45" />
 
       <div className="section-shell relative">
@@ -85,7 +85,7 @@ export function LiveStudio() {
 
             <div className="mt-2 grid gap-2 lg:ml-2 lg:mt-0">
               {chatLines.map((chat, index) => (
-                <div key={chat.name} className={`stream-chat-lane rounded-lg px-2.5 py-2 shadow-[0_8px_20px_rgba(166,90,114,0.08)] ${chat.tone}`} style={{ animationDelay: `${index * 180}ms` }}>
+                <div key={chat.name} className={`stream-chat-lane rounded-lg px-2.5 py-2 shadow-[0_8px_20px_rgba(239,90,136,0.08)] ${chat.tone}`} style={{ animationDelay: `${index * 180}ms` }}>
                   <p className="text-[10px] font-semibold text-cherry">{chat.name}</p>
                   <p className="mt-0.5 text-[11px] font-semibold leading-4">{chat.text}</p>
                 </div>
@@ -102,7 +102,7 @@ export function LiveStudio() {
               {studioStats.map((stat) => {
                 const Icon = stat.icon;
                 return (
-                  <div key={stat.label} className="stream-panel rounded-lg border border-cherry/20 bg-paper/95 p-2.5 shadow-[0_12px_28px_rgba(166,90,114,0.10)]">
+                  <div key={stat.label} className="stream-panel rounded-lg border border-cherry/20 bg-paper/95 p-2.5 shadow-[0_12px_28px_rgba(239,90,136,0.10)]">
                     <Icon aria-hidden className="h-4 w-4 text-cherry" />
                     <p className="mt-1 text-[9px] font-semibold text-cherry">{stat.label}</p>
                     <p className="mt-0.5 text-sm font-semibold text-ink">{stat.value}</p>
@@ -120,7 +120,7 @@ export function LiveStudio() {
                 {['LIVE START', 'NYAM CUT', 'COS PICK', 'FAN TALK'].map((label, index) => (
                   <span
                     key={label}
-                    className={`grid min-h-12 place-items-center rounded-lg text-[10px] font-semibold shadow-[0_8px_18px_rgba(166,90,114,0.08)] ${
+                    className={`grid min-h-12 place-items-center rounded-lg text-[10px] font-semibold shadow-[0_8px_18px_rgba(239,90,136,0.08)] ${
                       index % 2 === 0 ? 'bg-cherry text-paper' : 'bg-rosewash text-cherry'
                     }`}
                   >
@@ -132,7 +132,7 @@ export function LiveStudio() {
 
             <div className="grid grid-cols-3 gap-2">
               {clips.map((clip, index) => (
-                <a key={clip.id} href={clip.href} target="_blank" rel="noopener noreferrer" className="group relative min-h-28 overflow-hidden rounded-lg bg-rosewash shadow-[0_12px_28px_rgba(166,90,114,0.10)]">
+                <a key={clip.id} href={clip.href} target="_blank" rel="noopener noreferrer" className="group relative min-h-28 overflow-hidden rounded-lg bg-rosewash shadow-[0_12px_28px_rgba(239,90,136,0.10)]">
                   <SmartImage
                     src={clip.image}
                     fallbackSrc={clip.fallbackImage}

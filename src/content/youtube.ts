@@ -7,6 +7,14 @@ export function youtubeThumbnail(videoId: string, quality: 'max' | 'hq' = 'max')
   return `https://i.ytimg.com/vi/${videoId}/${quality === 'max' ? 'maxresdefault' : 'hqdefault'}.jpg`;
 }
 
+// Real high-res photos used by standalone UI cards (business CTA, fan-cafe link).
+// These replace the old AI-looking placeholder SVGs and are reserved out of the
+// home feed rotation (see homeFeed.ts) so they don't repeat across sections.
+export const businessThumbnail = youtubeThumbnail('JRpz4mmVoEg');
+export const businessThumbnailFallback = youtubeThumbnail('JRpz4mmVoEg', 'hq');
+export const fanCafeThumbnail = youtubeThumbnail('1N4gKcN0S4U');
+export const fanCafeThumbnailFallback = youtubeThumbnail('1N4gKcN0S4U', 'hq');
+
 const mainVideos: VideoItem[] = [
   ['BLLz176m5io', '가슴이 좋은거잖아', 'shorts', 35159, 894, '2026-06-29'],
   ['QaSxvPZvD-g', '변태 여캠', 'shorts', 21559, 599, '2026-06-26'],

@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 import { Instagram, Radio, Sparkles, Utensils } from 'lucide-react';
-import { heroVideos } from '../../content/videos';
+import { heroFeed } from '../../content/homeFeed';
 import { site } from '../../content/site';
 import { AnchorButton } from '../ui/Button';
 import { SmartImage } from '../media/SmartImage';
@@ -8,7 +8,7 @@ import { SmartImage } from '../media/SmartImage';
 export function HeroSection() {
   const [active, setActive] = useState(0);
   const [pointer, setPointer] = useState({ x: 50, y: 50 });
-  const heroPool = useMemo(() => heroVideos.slice(0, 8), []);
+  const heroPool = useMemo(() => heroFeed, []);
   const current = heroPool[active % heroPool.length];
 
   useEffect(() => {
@@ -30,7 +30,7 @@ export function HeroSection() {
         });
       }}
       style={{
-        background: `radial-gradient(circle at ${pointer.x}% ${pointer.y}%, rgba(201,117,139,.14), transparent 26%), linear-gradient(135deg, #fbf8f6 0%, #f5ece7 46%, #fbf8f6 100%)`,
+        background: `radial-gradient(circle at ${pointer.x}% ${pointer.y}%, rgba(255,134,172,.14), transparent 26%), linear-gradient(135deg, #fffbfa 0%, #fff0f3 46%, #fffbfa 100%)`,
       }}
     >
       <div className="absolute inset-0 grid grid-cols-4 gap-1 opacity-70 sm:grid-cols-6 lg:grid-cols-8">

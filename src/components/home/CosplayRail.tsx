@@ -1,12 +1,8 @@
-import { youtubeVideos } from '../../content/youtube';
+import { cosplayFeed } from '../../content/homeFeed';
 import { SmartImage } from '../media/SmartImage';
 
-const keywords = ['코스프레', '메이드', '부산코믹월드', '얼굴 자랑', '나는짭미'];
-
 export function CosplayRail() {
-  const items = youtubeVideos
-    .filter((item) => keywords.some((keyword) => item.title.includes(keyword)))
-    .slice(0, 8);
+  const items = cosplayFeed;
 
   if (!items.length) return null;
 

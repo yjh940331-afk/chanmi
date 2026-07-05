@@ -1,9 +1,8 @@
 import { useMemo, useState } from 'react';
 import { Camera, Crown, Heart, Play, Radio, ShoppingBag, Sparkles, Star } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { mediaItems } from '../../content/media';
+import { starFeed, starWideDrop } from '../../content/homeFeed';
 import { site } from '../../content/site';
-import { heroVideos } from '../../content/videos';
 import { SmartImage } from '../media/SmartImage';
 
 const starTabs = [
@@ -47,16 +46,13 @@ export function GlobalStarRoom() {
   const active = starTabs.find((item) => item.id === activeTab) ?? starTabs[0];
   const ActiveIcon = active.icon;
 
-  const visuals = useMemo(() => {
-    const selected = mediaItems.filter((item) => item.orientation === 'portrait').slice(0, 4);
-    return selected.length >= 4 ? selected : mediaItems.slice(0, 4);
-  }, []);
+  const visuals = useMemo(() => starFeed, []);
 
-  const wideDrop = heroVideos[1] ?? heroVideos[0];
+  const wideDrop = starWideDrop;
 
   return (
     <section className="relative overflow-hidden bg-rosewash py-6 text-ink">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_72%_18%,rgba(166,90,114,.16),transparent_24%),linear-gradient(180deg,#f5ece7_0%,#fbf8f6_58%,#ffffff_100%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_72%_18%,rgba(239,90,136,.16),transparent_24%),linear-gradient(180deg,#fff0f3_0%,#fffbfa_58%,#ffffff_100%)]" />
       <div className="stage-noise absolute inset-0 opacity-45" />
 
       <div className="section-shell relative">
@@ -68,7 +64,7 @@ export function GlobalStarRoom() {
             </p>
             <h2 className="mt-2 text-xl font-semibold leading-tight sm:text-2xl">월드 팬룸</h2>
           </div>
-          <span className="hidden rounded-lg bg-paper px-2 py-1 text-[10px] font-semibold text-cherry shadow-[0_8px_20px_rgba(166,90,114,0.08)] sm:inline-flex">
+          <span className="hidden rounded-lg bg-paper px-2 py-1 text-[10px] font-semibold text-cherry shadow-[0_8px_20px_rgba(239,90,136,0.08)] sm:inline-flex">
             LIVE / COS / DROP
           </span>
         </div>
@@ -172,7 +168,7 @@ export function GlobalStarRoom() {
               {starSignals.map((signal) => {
                 const Icon = signal.icon;
                 return (
-                  <div key={signal.label} className="global-gloss rounded-lg border border-cherry/20 bg-paper p-2.5 shadow-[0_12px_28px_rgba(166,90,114,0.10)]">
+                  <div key={signal.label} className="global-gloss rounded-lg border border-cherry/20 bg-paper p-2.5 shadow-[0_12px_28px_rgba(239,90,136,0.10)]">
                     <Icon aria-hidden className="h-4 w-4 text-cherry" />
                     <p className="mt-1 text-[9px] font-semibold text-cherry">{signal.label}</p>
                     <p className="mt-0.5 text-lg font-semibold leading-none text-ink">{signal.value}</p>
@@ -185,7 +181,7 @@ export function GlobalStarRoom() {
               href={wideDrop?.href || site.links.youtubeMain}
               target="_blank"
               rel="noopener noreferrer"
-              className="global-gloss group grid grid-cols-[88px_1fr] gap-2 rounded-lg border border-cherry/20 bg-paper p-2 shadow-[0_12px_28px_rgba(166,90,114,0.10)]"
+              className="global-gloss group grid grid-cols-[88px_1fr] gap-2 rounded-lg border border-cherry/20 bg-paper p-2 shadow-[0_12px_28px_rgba(239,90,136,0.10)]"
             >
               <span className="relative h-20 overflow-hidden rounded-lg bg-rosewash">
                 {wideDrop ? (

@@ -1,5 +1,5 @@
 import { Coffee, Instagram, Radio, Users, Utensils } from 'lucide-react';
-import { channelCards } from '../../content/youtube';
+import { channelCards, fanCafeThumbnail, fanCafeThumbnailFallback } from '../../content/youtube';
 import { site } from '../../content/site';
 import { SmartImage } from '../media/SmartImage';
 
@@ -18,7 +18,8 @@ export function SocialCards() {
       title: 'Fan Cafe',
       platform: 'Fan Cafe' as const,
       href: site.links.fanCafe,
-      image: '/visuals/chanmi-cafe.svg',
+      image: fanCafeThumbnail,
+      fallbackImage: fanCafeThumbnailFallback,
       channel: 'social' as const,
       kind: 'social' as const,
     },

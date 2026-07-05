@@ -1,10 +1,10 @@
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { mediaItems } from '../../content/media';
+import { mediaFeed } from '../../content/homeFeed';
 import { MediaCard } from '../media/MediaCard';
 
 export function MediaPreview() {
-  const featured = mediaItems.filter((item) => item.featured).slice(0, 10);
+  const featured = mediaFeed;
 
   return (
     <section className="section-shell py-7">

@@ -21,7 +21,7 @@ import {
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { site } from '../../content/site';
-import { heroVideos } from '../../content/videos';
+import { fanFeed } from '../../content/homeFeed';
 import { SmartImage } from '../media/SmartImage';
 
 const fanTools = [
@@ -119,15 +119,15 @@ const supporterTiers = [
 
 export function FanUniverse() {
   const [activeMood, setActiveMood] = useState(moodTabs[0].id);
-  const mainDrop = heroVideos[0];
-  const miniDrops = heroVideos.slice(1, 5);
-  const lockedDrops = heroVideos.slice(2, 5);
+  const mainDrop = fanFeed[0];
+  const miniDrops = fanFeed.slice(1, 5);
+  const lockedDrops = fanFeed.slice(2, 5);
   const mood = moodTabs.find((item) => item.id === activeMood) ?? moodTabs[0];
   const MoodIcon = mood.icon;
 
   return (
     <section className="relative overflow-hidden bg-paper py-6 text-ink">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_18%_18%,rgba(201,117,139,.18),transparent_28%),linear-gradient(120deg,#fbf8f6_0%,#f5ece7_48%,#ffffff_100%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_18%_18%,rgba(255,134,172,.18),transparent_28%),linear-gradient(120deg,#fffbfa_0%,#fff0f3_48%,#ffffff_100%)]" />
       <div className="stage-noise absolute inset-0 opacity-55" />
 
       <div className="section-shell relative">
@@ -141,7 +141,7 @@ export function FanUniverse() {
           </div>
           <div className="flex flex-wrap gap-1.5 text-[10px] font-semibold text-cherry">
             {['PINK', 'RED', 'WHITE'].map((item) => (
-              <span key={item} className="rounded-lg border border-cherry/20 bg-paper/80 px-2 py-1 shadow-[0_8px_20px_rgba(166,90,114,0.08)]">
+              <span key={item} className="rounded-lg border border-cherry/20 bg-paper/80 px-2 py-1 shadow-[0_8px_20px_rgba(239,90,136,0.08)]">
                 {item}
               </span>
             ))}
@@ -181,7 +181,7 @@ export function FanUniverse() {
                     href={route.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="focus-ring idol-shine inline-flex min-h-16 items-center gap-2 rounded-lg border border-cherry/20 bg-rosewash px-2 shadow-[0_10px_22px_rgba(166,90,114,0.08)]"
+                    className="focus-ring idol-shine inline-flex min-h-16 items-center gap-2 rounded-lg border border-cherry/20 bg-rosewash px-2 shadow-[0_10px_22px_rgba(239,90,136,0.08)]"
                   >
                     {content}
                   </a>
@@ -189,7 +189,7 @@ export function FanUniverse() {
                   <Link
                     key={route.label}
                     to={route.href}
-                    className="focus-ring idol-shine inline-flex min-h-16 items-center gap-2 rounded-lg border border-cherry/20 bg-rosewash px-2 shadow-[0_10px_22px_rgba(166,90,114,0.08)]"
+                    className="focus-ring idol-shine inline-flex min-h-16 items-center gap-2 rounded-lg border border-cherry/20 bg-rosewash px-2 shadow-[0_10px_22px_rgba(239,90,136,0.08)]"
                   >
                     {content}
                   </Link>
@@ -225,7 +225,7 @@ export function FanUniverse() {
             </div>
             <div className="rounded-lg bg-rosewash p-2.5">
               <div className="flex items-start gap-2">
-                <span className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-paper text-cherry shadow-[0_8px_20px_rgba(166,90,114,0.10)]">
+                <span className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-paper text-cherry shadow-[0_8px_20px_rgba(239,90,136,0.10)]">
                   <MoodIcon aria-hidden className="h-4 w-4" />
                 </span>
                 <div className="min-w-0">
@@ -311,7 +311,7 @@ export function FanUniverse() {
             {fanTools.map((tool) => {
               const Icon = tool.icon;
               return (
-                <div key={tool.label} className="depth-card idol-shine rounded-lg border border-cherry/20 bg-paper p-2.5 shadow-[0_14px_34px_rgba(166,90,114,0.10)]">
+                <div key={tool.label} className="depth-card idol-shine rounded-lg border border-cherry/20 bg-paper p-2.5 shadow-[0_14px_34px_rgba(239,90,136,0.10)]">
                   <div className="mb-2 flex items-center justify-between gap-2">
                     <span className={`inline-flex h-7 w-7 items-center justify-center rounded-lg ${tool.tone}`}>
                       <Icon aria-hidden className="h-4 w-4" />
@@ -335,7 +335,7 @@ export function FanUniverse() {
                 <Link
                   key={mission.label}
                   to={mission.label === 'FAN POST' ? '/fan' : '/videos'}
-                  className="focus-ring depth-card rounded-lg border border-cherry/20 bg-paper px-2 py-2.5 text-center shadow-[0_10px_24px_rgba(166,90,114,0.08)]"
+                  className="focus-ring depth-card rounded-lg border border-cherry/20 bg-paper px-2 py-2.5 text-center shadow-[0_10px_24px_rgba(239,90,136,0.08)]"
                 >
                   <Icon aria-hidden className="mx-auto h-4 w-4 text-cherry" />
                   <p className="mt-1 text-[9px] font-semibold text-cherry">{mission.label}</p>
@@ -375,7 +375,7 @@ export function FanUniverse() {
         </div>
 
         <div className="hide-scrollbar mt-2 flex snap-x gap-2 overflow-x-auto pb-1 lg:grid lg:grid-cols-[0.92fr_1.08fr] lg:overflow-visible lg:pb-0">
-          <div className="depth-card idol-shine min-w-[300px] snap-start rounded-lg border border-cherry/20 bg-paper p-3 shadow-[0_14px_34px_rgba(166,90,114,0.10)] lg:min-w-0">
+          <div className="depth-card idol-shine min-w-[300px] snap-start rounded-lg border border-cherry/20 bg-paper p-3 shadow-[0_14px_34px_rgba(239,90,136,0.10)] lg:min-w-0">
             <div className="mb-2 flex items-center justify-between gap-2">
               <span className="inline-flex min-h-7 items-center gap-1.5 rounded-lg bg-cherry px-2 text-[10px] font-semibold text-paper shadow-glow">
                 <MessageCircle aria-hidden className="h-3.5 w-3.5" />
@@ -390,7 +390,7 @@ export function FanUniverse() {
                   className={`flex ${message.role === 'fan' ? 'justify-end' : 'justify-start'}`}
                 >
                   <div
-                    className={`max-w-[82%] rounded-lg px-2.5 py-2 shadow-[0_8px_18px_rgba(166,90,114,0.08)] ${
+                    className={`max-w-[82%] rounded-lg px-2.5 py-2 shadow-[0_8px_18px_rgba(239,90,136,0.08)] ${
                       message.role === 'fan' ? 'bg-cherry text-paper' : 'bg-rosewash text-ink'
                     }`}
                   >
@@ -410,7 +410,7 @@ export function FanUniverse() {
             </div>
           </div>
 
-          <div className="depth-card idol-shine min-w-[332px] snap-start rounded-lg border border-cherry/20 bg-paper p-3 shadow-[0_14px_34px_rgba(166,90,114,0.10)] lg:min-w-0">
+          <div className="depth-card idol-shine min-w-[332px] snap-start rounded-lg border border-cherry/20 bg-paper p-3 shadow-[0_14px_34px_rgba(239,90,136,0.10)] lg:min-w-0">
             <div className="mb-2 flex items-center justify-between gap-2">
               <span className="inline-flex min-h-7 items-center gap-1.5 rounded-lg bg-cherry px-2 text-[10px] font-semibold text-paper shadow-glow">
                 <Lock aria-hidden className="h-3.5 w-3.5" />
@@ -472,7 +472,7 @@ export function FanUniverse() {
             href={site.links.chzzk}
             target="_blank"
             rel="noopener noreferrer"
-            className="focus-ring inline-flex min-h-8 items-center gap-2 rounded-lg bg-paper px-3 text-xs font-semibold text-cherry shadow-[0_10px_24px_rgba(166,90,114,0.12)]"
+            className="focus-ring inline-flex min-h-8 items-center gap-2 rounded-lg bg-paper px-3 text-xs font-semibold text-cherry shadow-[0_10px_24px_rgba(239,90,136,0.12)]"
           >
             <Bell aria-hidden className="h-4 w-4" />
             라이브 알림

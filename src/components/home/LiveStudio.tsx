@@ -148,14 +148,14 @@ export function LiveStudio() {
               ))}
             </div>
 
-            <div className="stream-panel rounded-lg border border-cherry/20 bg-cherry p-3 text-paper shadow-glow">
+            <div className="rounded-lg border border-ink/10 bg-ink p-3 text-paper shadow-glow">
               <div className="flex items-center gap-2">
-                <Flame aria-hidden className="h-5 w-5" />
-                <p className="text-sm font-semibold">지금 찬미 방송 모드</p>
+                <Flame aria-hidden className="h-5 w-5 text-blush" />
+                <p className="text-sm font-semibold text-paper">지금 찬미 방송 모드</p>
               </div>
               <div className="mt-2 flex gap-1.5">
                 {[BarChart3, Zap, Heart].map((Icon, index) => (
-                  <span key={index} className="inline-flex h-8 flex-1 items-center justify-center rounded-lg bg-paper/20">
+                  <span key={index} className="inline-flex h-8 flex-1 items-center justify-center rounded-lg bg-paper/15 text-paper">
                     <Icon aria-hidden className="h-4 w-4" />
                   </span>
                 ))}

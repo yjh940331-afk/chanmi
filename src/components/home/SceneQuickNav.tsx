@@ -104,7 +104,7 @@ export function SceneQuickNav() {
               aria-label={scene.label}
             >
               <Icon aria-hidden className={cn('h-4 w-4', scene.id === 'fan' && 'fill-current')} />
-              <span className="pointer-events-none absolute right-11 top-1/2 hidden -translate-y-1/2 rounded-lg bg-cherry px-2 py-1 text-[10px] font-black text-paper shadow-glow group-hover:block">
+              <span className="pointer-events-none absolute right-11 top-1/2 hidden -translate-y-1/2 rounded-lg bg-cherry px-2 py-1 text-[10px] font-semibold text-paper shadow-glow group-hover:block">
                 {scene.label}
               </span>
             </button>
@@ -123,7 +123,7 @@ export function SceneQuickNav() {
               type="button"
               onClick={() => jumpTo(scene.id)}
               className={cn(
-                'focus-ring inline-flex min-h-8 min-w-14 flex-1 items-center justify-center gap-1 rounded-lg px-1.5 text-[9px] font-black transition',
+                'focus-ring inline-flex min-h-8 min-w-14 flex-1 items-center justify-center gap-1 rounded-lg px-1.5 text-[9px] font-semibold transition',
                 active ? 'bg-cherry text-paper shadow-glow' : 'text-cherry hover:bg-rosewash',
               )}
               aria-label={scene.label}

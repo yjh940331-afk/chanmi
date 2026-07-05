@@ -97,7 +97,7 @@ export function FanPostList({ limit = 9, refreshKey = 0 }: FanPostListProps) {
       </div>
       {!loading && posts.length === 0 ? (
         <div className="rounded-lg border border-dashed border-ink/20 bg-white px-4 py-6 text-center">
-          <p className="font-black">아직 공개된 응원이 없어요.</p>
+          <p className="font-semibold">아직 공개된 응원이 없어요.</p>
           <p className="mt-1 text-xs text-ink/60">첫 응원은 관리자 승인 후 이곳에 보여집니다.</p>
         </div>
       ) : null}

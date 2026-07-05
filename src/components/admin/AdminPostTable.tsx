@@ -75,7 +75,7 @@ export function AdminPostTable({ token, onLogout }: AdminPostTableProps) {
     <div className="grid gap-5">
       <div className="flex flex-col gap-3 rounded-lg border border-ink/10 bg-white p-4 shadow-lift lg:flex-row lg:items-center lg:justify-between">
         <div>
-          <h1 className="text-2xl font-black">팬 응원 관리</h1>
+          <h1 className="text-2xl font-semibold">팬 응원 관리</h1>
           <p className="mt-1 text-sm text-ink/60">승인한 메시지만 공개 페이지에 노출됩니다.</p>
         </div>
         <div className="flex flex-wrap gap-2">
@@ -121,8 +121,8 @@ export function AdminPostTable({ token, onLogout }: AdminPostTableProps) {
             <div className="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
               <div className="min-w-0">
                 <div className="flex flex-wrap items-center gap-2">
-                  <h2 className="font-black">{item.nickname}</h2>
-                  <span className="rounded-lg bg-ink px-2 py-1 text-xs font-black text-paper">
+                  <h2 className="font-semibold">{item.nickname}</h2>
+                  <span className="rounded-lg bg-ink px-2 py-1 text-xs font-semibold text-paper">
                     {item.status}
                   </span>
                   <span className="text-xs font-bold text-ink/50">{formatDate(item.createdAt)}</span>

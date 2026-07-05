@@ -19,7 +19,7 @@ export function MobileNav({ open, onClose }: MobileNavProps) {
     >
       <div className="mb-3 flex items-center justify-between rounded-lg bg-rosewash p-2">
         <BrandMark size="sm" />
-        <span className="rounded-lg bg-paper px-2 py-1 text-[10px] font-black text-cherry">FAN HUB</span>
+        <span className="rounded-lg bg-paper px-2 py-1 text-[10px] font-semibold text-cherry">FAN HUB</span>
       </div>
       <nav className="grid grid-cols-2 gap-2" aria-label="모바일 내비게이션">
         {navItems.map((item) =>
@@ -28,7 +28,7 @@ export function MobileNav({ open, onClose }: MobileNavProps) {
               key={item.href}
               href={item.href}
               onClick={onClose}
-              className="focus-ring rounded-lg bg-rosewash px-3 py-2 text-sm font-black text-ink hover:bg-cherry/10"
+              className="focus-ring rounded-lg bg-rosewash px-3 py-2 text-sm font-semibold text-ink hover:bg-cherry/10"
             >
               {item.label}
             </a>
@@ -39,7 +39,7 @@ export function MobileNav({ open, onClose }: MobileNavProps) {
               onClick={onClose}
               className={({ isActive }) =>
                 cn(
-                  'focus-ring rounded-lg px-3 py-2 text-sm font-black hover:bg-cherry/10',
+                  'focus-ring rounded-lg px-3 py-2 text-sm font-semibold hover:bg-cherry/10',
                   isActive ? 'bg-cherry text-paper' : 'bg-rosewash text-ink',
                 )
               }
@@ -52,7 +52,7 @@ export function MobileNav({ open, onClose }: MobileNavProps) {
           href={site.links.chzzk}
           target="_blank"
           rel="noopener noreferrer"
-          className="focus-ring col-span-2 inline-flex min-h-9 items-center justify-center gap-2 rounded-lg bg-cherry px-4 text-sm font-black text-paper shadow-glow"
+          className="focus-ring col-span-2 inline-flex min-h-9 items-center justify-center gap-2 rounded-lg bg-cherry px-4 text-sm font-semibold text-paper shadow-glow"
         >
           치지직
           <ExternalLink aria-hidden className="h-4 w-4" />

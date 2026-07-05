@@ -22,10 +22,10 @@ export function AdminLogin({ onLogin }: AdminLoginProps) {
       <div className="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-ink text-paper">
         <Lock aria-hidden className="h-5 w-5" />
       </div>
-      <h1 className="text-2xl font-black">관리자</h1>
+      <h1 className="text-2xl font-semibold">관리자</h1>
       <p className="mt-2 text-sm leading-6 text-ink/60">ADMIN_TOKEN을 입력해 팬 응원 메시지를 관리합니다.</p>
       <label className="mt-5 grid gap-2">
-        <span className="text-sm font-black">Admin token</span>
+        <span className="text-sm font-semibold">Admin token</span>
         <Input
           type="password"
           value={token}

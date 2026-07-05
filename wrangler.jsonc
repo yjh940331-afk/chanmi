@@ -7,7 +7,7 @@
     {
       "binding": "DB",
       "database_name": "chanmi-db",
-      "database_id": "00000000-0000-0000-0000-000000000000",
+      "database_id": "9b8ddf4e-a466-4807-b8f2-687593b047a3",
       "migrations_dir": "migrations"
     }
   ],
@@ -19,6 +19,8 @@
   ],
   "vars": {
     "PUBLIC_SITE_URL": "https://www.chanmi.kr",
-    "PUBLIC_ASSET_BASE_URL": "https://assets.chanmi.kr"
+    "PUBLIC_ASSET_BASE_URL": "https://assets.chanmi.kr",
+    // 봇 방지(Turnstile) 미사용 상태 — 검증을 우회함. Turnstile 도입 시 "false"로 바꾸고 TURNSTILE_SECRET_KEY를 시크릿으로 등록할 것.
+    "TURNSTILE_DEV_BYPASS": "true"
   }
 }

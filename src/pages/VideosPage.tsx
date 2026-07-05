@@ -30,11 +30,11 @@ export default function VideosPage() {
     <main className="bg-rosewash">
       <section className="section-shell py-6 text-ink">
         <div className="mb-4 max-w-3xl">
-          <p className="inline-flex min-h-7 items-center gap-2 rounded-lg bg-cherry px-2.5 text-[11px] font-black text-paper shadow-glow">
+          <p className="inline-flex min-h-7 items-center gap-2 rounded-lg bg-cherry px-2.5 text-[11px] font-semibold text-paper shadow-glow">
             <Play aria-hidden className="h-3.5 w-3.5 fill-current text-paper" />
             VIDEOS
           </p>
-          <h1 className="mt-3 text-2xl font-black sm:text-3xl">영상 몰아보기</h1>
+          <h1 className="mt-3 text-2xl font-semibold sm:text-3xl">영상 몰아보기</h1>
         </div>
 
         <div className="mb-4 flex gap-1.5 overflow-x-auto pb-1">
@@ -44,7 +44,7 @@ export default function VideosPage() {
               type="button"
               onClick={() => setFilter(item.value)}
               className={cn(
-                'focus-ring min-h-8 shrink-0 rounded-lg px-3 text-xs font-black transition',
+                'focus-ring min-h-8 shrink-0 rounded-lg px-3 text-xs font-semibold transition',
                 filter === item.value
                   ? 'bg-cherry text-paper shadow-glow'
                   : 'bg-paper text-ink ring-1 ring-cherry/20 hover:bg-cherry/10',
@@ -58,7 +58,7 @@ export default function VideosPage() {
         {landscapeItems.length ? (
           <section className="mb-6">
             <div className="mb-2 flex items-center justify-between gap-3">
-              <h2 className="text-sm font-black text-ink">와이드 / 채널</h2>
+              <h2 className="text-sm font-semibold text-ink">와이드 / 채널</h2>
               <span className="text-[11px] font-bold text-ink/40">{landscapeItems.length} clips</span>
             </div>
             <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-6">
@@ -72,7 +72,7 @@ export default function VideosPage() {
         {portraitItems.length ? (
           <section>
             <div className="mb-2 flex items-center justify-between gap-3">
-              <h2 className="text-sm font-black text-ink">세로 쇼츠</h2>
+              <h2 className="text-sm font-semibold text-ink">세로 쇼츠</h2>
               <span className="text-[11px] font-bold text-ink/40">{portraitItems.length} shorts</span>
             </div>
             <div className="grid grid-cols-2 gap-2 sm:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8">

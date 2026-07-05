@@ -20,8 +20,8 @@ export function MediaCard({ item, compact }: MediaCardProps) {
               loading="lazy"
               width={item.width}
               height={item.height}
-              className="h-full w-full object-cover saturate-150 transition duration-500 group-hover:scale-[1.05]"
-              compactClassName="h-full w-full object-contain p-4 saturate-150 transition duration-500 group-hover:scale-[1.02]"
+              className="h-full w-full object-cover saturate-100 transition duration-500 group-hover:scale-[1.05]"
+              compactClassName="h-full w-full object-contain p-4 saturate-100 transition duration-500 group-hover:scale-[1.02]"
             />
           </a>
         ) : (
@@ -31,15 +31,15 @@ export function MediaCard({ item, compact }: MediaCardProps) {
             loading="lazy"
             width={item.width}
             height={item.height}
-            className="h-full w-full object-cover saturate-150 transition duration-500 group-hover:scale-[1.05]"
-            compactClassName="h-full w-full object-contain p-4 saturate-150 transition duration-500 group-hover:scale-[1.02]"
+            className="h-full w-full object-cover saturate-100 transition duration-500 group-hover:scale-[1.05]"
+            compactClassName="h-full w-full object-contain p-4 saturate-100 transition duration-500 group-hover:scale-[1.02]"
           />
         )}
         <div className="absolute inset-0 bg-gradient-to-t from-paper/95 via-paper/10 to-transparent" />
         {item.featured ? <Badge className="absolute left-2 top-2 bg-cherry px-2 py-1 text-[10px] text-paper shadow-lift">HOT</Badge> : null}
         <div className={compact ? 'absolute bottom-0 left-0 right-0 p-2.5' : 'absolute bottom-0 left-0 right-0 p-4'}>
-          <p className="text-[10px] font-black uppercase text-cherry">{item.category}</p>
-          <h3 className="mt-0.5 line-clamp-2 text-xs font-black leading-4 text-ink sm:text-sm">{item.title}</h3>
+          <p className="text-[10px] font-semibold uppercase text-cherry">{item.category}</p>
+          <h3 className="mt-0.5 line-clamp-2 text-xs font-semibold leading-4 text-ink sm:text-sm">{item.title}</h3>
         </div>
       </div>
     </article>

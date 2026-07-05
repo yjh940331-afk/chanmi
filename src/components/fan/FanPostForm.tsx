@@ -57,7 +57,7 @@ export function FanPostForm({ onCreated }: FanPostFormProps) {
     <form onSubmit={onSubmit} className="rounded-lg border border-ink/10 bg-white p-4 shadow-lift">
       <div className="grid gap-3">
         <label className="grid gap-1.5">
-          <span className="text-xs font-black">닉네임</span>
+          <span className="text-xs font-semibold">닉네임</span>
           <Input
             value={nickname}
             onChange={(event) => setNickname(event.target.value)}
@@ -69,7 +69,7 @@ export function FanPostForm({ onCreated }: FanPostFormProps) {
         </label>
 
         <label className="grid gap-1.5">
-          <span className="text-xs font-black">응원 메시지</span>
+          <span className="text-xs font-semibold">응원 메시지</span>
           <Textarea
             value={message}
             onChange={(event) => setMessage(event.target.value)}
@@ -83,7 +83,7 @@ export function FanPostForm({ onCreated }: FanPostFormProps) {
         </label>
 
         <label className="grid gap-1.5">
-          <span className="text-xs font-black">이미지</span>
+          <span className="text-xs font-semibold">이미지</span>
           <div className="flex min-h-9 items-center gap-2 rounded-lg border border-dashed border-ink/20 bg-ink/5 px-3 text-xs font-bold text-ink/60">
             <Upload aria-hidden className="h-4 w-4" />
             이미지 첨부는 준비 중입니다.

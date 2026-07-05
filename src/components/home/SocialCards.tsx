@@ -40,15 +40,15 @@ export function SocialCards() {
               src={item.image}
               fallbackSrc={item.fallbackImage}
               alt={`${item.title} 썸네일`}
-              className="absolute inset-0 h-full w-full object-cover opacity-76 saturate-150 transition duration-500 group-hover:scale-110 group-hover:opacity-100"
+              className="absolute inset-0 h-full w-full object-cover opacity-76 saturate-100 transition duration-500 group-hover:scale-110 group-hover:opacity-100"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-paper via-paper/40 to-transparent" />
             <div className="absolute left-2 top-2 inline-flex h-8 w-8 items-center justify-center rounded-lg bg-cherry text-paper shadow-glow">
               <Icon aria-hidden className="h-3.5 w-3.5" />
             </div>
             <div className="absolute bottom-0 left-0 right-0 p-2.5">
-              <p className="text-[10px] font-black uppercase text-cherry">{item.platform}</p>
-              <h3 className="mt-0.5 line-clamp-1 text-sm font-black text-ink">{item.title}</h3>
+              <p className="text-[10px] font-semibold uppercase text-cherry">{item.platform}</p>
+              <h3 className="mt-0.5 line-clamp-1 text-sm font-semibold text-ink">{item.title}</h3>
             </div>
           </a>
         );

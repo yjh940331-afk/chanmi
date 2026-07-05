@@ -39,16 +39,16 @@ export default function AdsPage() {
       <section className="section-shell py-6">
         <div className="mb-4 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
           <div>
-            <p className="inline-flex min-h-7 items-center gap-2 rounded-lg bg-cherry px-2.5 text-[11px] font-black text-paper shadow-glow">
+            <p className="inline-flex min-h-7 items-center gap-2 rounded-lg bg-cherry px-2.5 text-[11px] font-semibold text-paper shadow-glow">
               <Megaphone aria-hidden className="h-3.5 w-3.5 text-paper" />
               AD
             </p>
-            <h1 className="mt-3 text-2xl font-black sm:text-3xl">광고 문의</h1>
+            <h1 className="mt-3 text-2xl font-semibold sm:text-3xl">광고 문의</h1>
             <p className="mt-2 max-w-xl text-sm font-bold leading-5 text-ink/60">방송 흐름에 맞춰 부담 없이, 예쁘게.</p>
           </div>
           <a
             href={site.links.mail}
-            className="focus-ring inline-flex min-h-9 items-center justify-center gap-2 rounded-lg bg-cherry px-3 text-sm font-black text-paper shadow-glow"
+            className="focus-ring inline-flex min-h-9 items-center justify-center gap-2 rounded-lg bg-cherry px-3 text-sm font-semibold text-paper shadow-glow"
           >
             <Mail aria-hidden className="h-4 w-4" />
             메일
@@ -63,8 +63,8 @@ export default function AdsPage() {
               <article key={slot.title} className="depth-card rounded-lg border border-cherry/20 bg-paper p-3 shadow-lift">
                 <div className="flex items-start justify-between gap-3">
                   <div>
-                    <p className="text-[10px] font-black text-cherry">{slot.meta}</p>
-                    <h2 className="mt-1 text-base font-black">{slot.title}</h2>
+                    <p className="text-[10px] font-semibold text-cherry">{slot.meta}</p>
+                    <h2 className="mt-1 text-base font-semibold">{slot.title}</h2>
                   </div>
                   <span className="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-cherry text-paper shadow-glow">
                     <Icon aria-hidden className="h-3.5 w-3.5" />

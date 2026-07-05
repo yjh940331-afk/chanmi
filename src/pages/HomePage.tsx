@@ -57,8 +57,8 @@ export default function HomePage() {
       <section id="links" className="home-scene scene-reveal section-shell py-6">
         <div className="mb-3 flex items-end justify-between gap-4">
           <div>
-            <p className="text-[11px] font-black text-cherry">CHANNELS</p>
-            <h2 className="mt-0.5 text-xl font-black text-ink sm:text-2xl">바로 꽂히는 링크</h2>
+            <p className="text-[11px] font-semibold text-cherry">CHANNELS</p>
+            <h2 className="mt-0.5 text-xl font-semibold text-ink sm:text-2xl">바로 꽂히는 링크</h2>
           </div>
           <p className="hidden text-xs font-bold text-ink/40 sm:block">CHZZK / IG / YT / FAN</p>
         </div>

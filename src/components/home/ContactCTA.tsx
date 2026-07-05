@@ -7,11 +7,11 @@ export function ContactCTA() {
     <section id="contact" className="scroll-mt-20 bg-paper py-6">
       <div className="section-shell grid gap-5 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
         <div>
-          <p className="inline-flex min-h-7 items-center gap-2 rounded-lg bg-cherry px-2.5 text-xs font-black text-paper shadow-glow">
+          <p className="inline-flex min-h-7 items-center gap-2 rounded-lg bg-cherry px-2.5 text-xs font-semibold text-paper shadow-glow">
             <Sparkles aria-hidden className="h-3.5 w-3.5 text-paper" />
             Business
           </p>
-          <h2 className="mt-3 text-xl font-black sm:text-2xl">비즈니스 문의</h2>
+          <h2 className="mt-3 text-xl font-semibold sm:text-2xl">비즈니스 문의</h2>
           <p className="mt-2 max-w-xl text-sm leading-5 text-ink/70">광고 / 협찬 / 출연 / 콜라보</p>
           <div className="mt-4">
             <AnchorButton href={site.links.mail} size="md">

@@ -20,7 +20,7 @@ export function MobileFanDock() {
           const Icon = item.icon;
           const active = !item.external && location.pathname === item.href;
           const className = cn(
-            'focus-ring inline-flex min-h-11 flex-col items-center justify-center gap-0.5 rounded-lg text-[10px] font-black transition',
+            'focus-ring inline-flex min-h-11 flex-col items-center justify-center gap-0.5 rounded-lg text-[10px] font-semibold transition',
             active ? 'bg-cherry text-paper shadow-glow' : 'text-cherry hover:bg-rosewash',
           );
 

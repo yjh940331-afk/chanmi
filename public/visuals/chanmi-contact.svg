@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-label="찬미 비즈니스 문의 이미지">
+  <rect width="1200" height="800" fill="#1b1318"/>
+  <path d="M100 100h1000v600H100z" fill="#fffafd"/>
+  <path d="M172 172h460v456H172z" fill="#ff4f93"/>
+  <path d="M692 172h336v456H692z" fill="#fff2aa"/>
+  <path d="M244 286h300v22H244zM244 348h230v14H244zM244 380h260v14H244z" fill="#fffafd"/>
+  <path d="M744 260h232v18H744zM744 318h184v14H744zM744 348h212v14H744z" fill="#1b1318"/>
+  <path d="M744 496h170v52H744z" fill="#1b1318"/>
+  <text x="244" y="540" font-family="Arial, sans-serif" font-size="52" font-weight="900" fill="#fffafd">CONTACT</text>
+  <text x="766" y="532" font-family="Arial, sans-serif" font-size="28" font-weight="800" fill="#fffafd">MAIL</text>
+</svg>

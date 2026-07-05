@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1500" viewBox="0 0 1200 1500" role="img" aria-label="찬미 라이브 무드 이미지">
+  <rect width="1200" height="1500" fill="#1b1318"/>
+  <path d="M110 120h980v1260H110z" fill="#fffafd"/>
+  <path d="M170 180h860v820H170z" fill="#ff4f93"/>
+  <path d="M230 252h740v560H230z" fill="#1b1318"/>
+  <path d="M288 326h210v20H288zM288 380h520v14H288zM288 414h380v14H288z" fill="#fffafd"/>
+  <path d="M288 844h180v56H288z" fill="#ffd166"/>
+  <path d="M780 292l30 70 74 8-56 50 18 72-66-38-66 38 18-72-56-50 74-8z" fill="#fffafd"/>
+  <text x="284" y="880" font-family="Arial, sans-serif" font-size="34" font-weight="800" fill="#1b1318">LIVE ON</text>
+  <text x="170" y="1180" font-family="Arial, sans-serif" font-size="80" font-weight="900" fill="#1b1318">오늘도</text>
+  <text x="170" y="1272" font-family="Arial, sans-serif" font-size="80" font-weight="900" fill="#d91645">찬며드는 중</text>
+</svg>
+

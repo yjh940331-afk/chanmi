@@ -1,0 +1,24 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "chanmi",
+  "pages_build_output_dir": "./dist",
+  "compatibility_date": "2026-07-04",
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "chanmi-db",
+      "database_id": "00000000-0000-0000-0000-000000000000",
+      "migrations_dir": "migrations"
+    }
+  ],
+  "r2_buckets": [
+    {
+      "binding": "MEDIA_BUCKET",
+      "bucket_name": "chanmi-media"
+    }
+  ],
+  "vars": {
+    "PUBLIC_SITE_URL": "https://www.chanmi.kr",
+    "PUBLIC_ASSET_BASE_URL": "https://assets.chanmi.kr"
+  }
+}

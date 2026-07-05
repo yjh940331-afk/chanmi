@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1000" viewBox="0 0 1200 1000" role="img" aria-label="찬미 먹방 무드 이미지">
+  <rect width="1200" height="1000" fill="#fffafd"/>
+  <path d="M90 90h1020v820H90z" fill="#1b1318"/>
+  <path d="M166 168h448v664H166z" fill="#ffedf5"/>
+  <path d="M676 168h358v224H676zM676 442h358v390H676z" fill="#ff4f93"/>
+  <path d="M246 284a144 144 0 1 0 288 0a144 144 0 1 0 -288 0" fill="#ffd166"/>
+  <path d="M294 306h192v26H294zM318 372h144v26H318z" fill="#1b1318"/>
+  <path d="M734 230h212v18H734zM734 284h170v14H734zM734 314h238v14H734z" fill="#fffafd"/>
+  <text x="718" y="674" font-family="Arial, sans-serif" font-size="96" font-weight="900" fill="#fffafd">NYAM</text>
+  <text x="718" y="764" font-family="Arial, sans-serif" font-size="44" font-weight="800" fill="#1b1318">먹방.zip</text>
+</svg>
+

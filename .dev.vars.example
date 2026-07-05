@@ -1,0 +1,6 @@
+ADMIN_TOKEN="change-this-local-admin-token"
+TURNSTILE_SECRET_KEY=""
+TURNSTILE_DEV_BYPASS="true"
+PUBLIC_SITE_URL="http://127.0.0.1:8788"
+PUBLIC_ASSET_BASE_URL=""
+

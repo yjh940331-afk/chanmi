@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1350" viewBox="0 0 1200 1350" role="img" aria-label="찬미 스테이지 무드 이미지">
+  <rect width="1200" height="1350" fill="#fffafd"/>
+  <path d="M110 110h980v1130H110z" fill="#1b1318"/>
+  <path d="M202 204h796v540H202z" fill="#6d5dfc"/>
+  <path d="M286 290h190v18H286zM286 344h392v14H286zM286 376h316v14H286z" fill="#fffafd"/>
+  <path d="M286 852h628v70H286z" fill="#ff4f93"/>
+  <path d="M310 1008h230v32H310zM310 1070h408v14H310zM310 1102h336v14H310z" fill="#fffafd"/>
+  <path d="M824 294l30 70 74 8-56 50 18 72-66-38-66 38 18-72-56-50 74-8z" fill="#ffd166"/>
+  <text x="322" y="902" font-family="Arial, sans-serif" font-size="42" font-weight="900" fill="#1b1318">STREAMER</text>
+</svg>
+

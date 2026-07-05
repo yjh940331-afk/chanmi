@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-label="찬미 데일리 무드 이미지">
+  <rect width="1200" height="900" fill="#ffe9f3"/>
+  <path d="M96 94h1008v712H96z" fill="#fffafd"/>
+  <path d="M146 144h342v612H146z" fill="#1b1318"/>
+  <path d="M540 144h514v272H540zM540 468h514v288H540z" fill="#fff2aa"/>
+  <path d="M206 214h146v18H206zM206 264h220v12H206zM206 292h176v12H206z" fill="#fffafd"/>
+  <path d="M660 214l24 56 60 6-45 41 14 58-53-30-53 30 14-58-45-41 60-6z" fill="#d91645"/>
+  <path d="M604 558h270v18H604zM604 608h354v12H604zM604 638h286v12H604z" fill="#1b1318"/>
+  <text x="196" y="662" font-family="Arial, sans-serif" font-size="64" font-weight="900" fill="#fffafd">DAILY</text>
+  <text x="604" y="714" font-family="Arial, sans-serif" font-size="40" font-weight="800" fill="#d91645">오늘의 찬미</text>
+</svg>
+

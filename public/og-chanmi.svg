@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="나는 찬미 Official">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#fffafd"/>
+      <stop offset="0.5" stop-color="#ffe3ef"/>
+      <stop offset="1" stop-color="#1b1318"/>
+    </linearGradient>
+    <linearGradient id="tag" x1="0" x2="1">
+      <stop offset="0" stop-color="#ff4f93"/>
+      <stop offset="1" stop-color="#ffd166"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <path d="M80 122h1040v386H80z" fill="#fffafd" opacity=".74"/>
+  <path d="M120 162h960v306H120z" fill="#1b1318"/>
+  <path d="M158 204h212v24H158zM158 256h512v14H158zM158 286h430v14H158z" fill="#fffafd"/>
+  <path d="M158 340h178v52H158z" fill="url(#tag)"/>
+  <path d="M796 132l32 74 80 8-60 54 18 78-70-40-70 40 18-78-60-54 80-8z" fill="#ffd166"/>
+  <path d="M828 178l18 42 46 5-34 31 10 45-40-23-40 23 10-45-34-31 46-5z" fill="#ff4f93"/>
+  <text x="154" y="212" font-family="Arial, sans-serif" font-size="44" font-weight="800" fill="#fffafd">나는 찬미 Official</text>
+  <text x="154" y="390" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="#1b1318">오늘도 찬며드는 중</text>
+</svg>
+

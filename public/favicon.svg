@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="나는 찬미">
+  <defs>
+    <linearGradient id="bg" x1="8" x2="56" y1="8" y2="56" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#e6003f" />
+      <stop offset=".58" stop-color="#ff4f93" />
+      <stop offset="1" stop-color="#ff7ab5" />
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="url(#bg)" />
+  <rect x="5" y="5" width="54" height="54" rx="11" fill="none" stroke="#fffafd" stroke-opacity=".5" stroke-width="2" />
+  <text x="32" y="41" text-anchor="middle" font-family="Pretendard, Arial, sans-serif" font-size="27" font-weight="900" fill="#fffafd">찬</text>
+  <path d="M47 12l2.1 4.1 4.6.7-3.3 3.2.8 4.6-4.2-2.2-4.1 2.2.8-4.6-3.4-3.2 4.7-.7L47 12z" fill="#fffafd" />
+  <path d="M17.5 45.5c-4.7-3.2-7.5-5.8-7.5-9.1 0-2.4 1.8-4.2 4.1-4.2 1.5 0 2.7.7 3.4 1.8.7-1.1 1.9-1.8 3.4-1.8 2.3 0 4.1 1.8 4.1 4.2 0 3.3-2.8 5.9-7.5 9.1z" fill="#fffafd" opacity=".86" />
+</svg>

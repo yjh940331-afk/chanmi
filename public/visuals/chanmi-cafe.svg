@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1100" viewBox="0 0 1200 1100" role="img" aria-label="찬미 팬카페 무드 이미지">
+  <rect width="1200" height="1100" fill="#1b1318"/>
+  <path d="M120 120h960v860H120z" fill="#fffafd"/>
+  <path d="M200 208h800v210H200z" fill="#d91645"/>
+  <path d="M200 486h360v410H200zM626 486h374v410H626z" fill="#ffe1ef"/>
+  <path d="M258 556h174v18H258zM258 612h232v12H258zM258 642h190v12H258z" fill="#1b1318"/>
+  <path d="M690 556h218v18H690zM690 612h246v12H690zM690 642h198v12H690z" fill="#1b1318"/>
+  <text x="258" y="338" font-family="Arial, sans-serif" font-size="76" font-weight="900" fill="#fffafd">FAN CAFE</text>
+  <text x="258" y="792" font-family="Arial, sans-serif" font-size="38" font-weight="800" fill="#d91645">따뜻한 응원 한마디</text>
+</svg>
+

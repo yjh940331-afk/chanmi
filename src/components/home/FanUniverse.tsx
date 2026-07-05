@@ -32,6 +32,8 @@ const fanTools = [
     copy: '라이브, 업로드, 팬카페 흐름을 한눈에.',
     meta: 'LIVE / NYAM / NOTICE',
     tone: 'bg-cherry text-paper',
+    href: '/#schedule',
+    external: false,
   },
   {
     icon: ScanLine,
@@ -40,6 +42,8 @@ const fanTools = [
     copy: '방송 보고, 댓글 남기고, 오늘도 출석.',
     meta: '4 STAMPS',
     tone: 'bg-paper text-cherry',
+    href: '/#pass',
+    external: false,
   },
   {
     icon: Camera,
@@ -48,6 +52,8 @@ const fanTools = [
     copy: '코스프레와 셀카 무드를 카드처럼 모아보기.',
     meta: 'COS / DAILY',
     tone: 'bg-paper text-cherry',
+    href: '/media',
+    external: false,
   },
   {
     icon: ShoppingBag,
@@ -56,13 +62,15 @@ const fanTools = [
     copy: '먹방, 뷰티, 게임 협업을 예쁘게 연결.',
     meta: 'MAIL OPEN',
     tone: 'bg-cherry text-paper',
+    href: '/ads',
+    external: false,
   },
 ];
 
 const missions = [
-  { label: 'LIVE CHECK', value: '치지직 알림 켜기', icon: Radio },
-  { label: 'FAN POST', value: '응원글 남기기', icon: HeartHandshake },
-  { label: 'DROP SAVE', value: '최애 컷 저장', icon: Star },
+  { label: 'LIVE CHECK', value: '치지직 알림 켜기', icon: Radio, href: site.links.chzzk, external: true },
+  { label: 'FAN POST', value: '응원글 남기기', icon: HeartHandshake, href: '/fan', external: false },
+  { label: 'DROP SAVE', value: '최애 컷 저장', icon: Star, href: '/media', external: false },
 ];
 
 const fanRoutes = [
@@ -310,8 +318,8 @@ export function FanUniverse() {
           <div className="grid grid-cols-2 gap-2 xl:grid-cols-4">
             {fanTools.map((tool) => {
               const Icon = tool.icon;
-              return (
-                <div key={tool.label} className="depth-card idol-shine rounded-lg border border-cherry/20 bg-paper p-2.5 shadow-[0_14px_34px_rgba(239,90,136,0.10)]">
+              const content = (
+                <>
                   <div className="mb-2 flex items-center justify-between gap-2">
                     <span className={`inline-flex h-7 w-7 items-center justify-center rounded-lg ${tool.tone}`}>
                       <Icon aria-hidden className="h-4 w-4" />
@@ -321,7 +329,27 @@ export function FanUniverse() {
                   <h3 className="text-sm font-semibold text-ink">{tool.title}</h3>
                   <p className="mt-1 min-h-8 text-[11px] font-bold leading-4 text-ink/60">{tool.copy}</p>
                   <p className="mt-2 rounded-lg bg-rosewash px-2 py-1 text-[10px] font-semibold text-cherry">{tool.meta}</p>
-                </div>
+                </>
+              );
+
+              return tool.external ? (
+                <a
+                  key={tool.label}
+                  href={tool.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="focus-ring depth-card idol-shine rounded-lg border border-cherry/20 bg-paper p-2.5 shadow-[0_14px_34px_rgba(239,90,136,0.10)]"
+                >
+                  {content}
+                </a>
+              ) : (
+                <Link
+                  key={tool.label}
+                  to={tool.href}
+                  className="focus-ring depth-card idol-shine rounded-lg border border-cherry/20 bg-paper p-2.5 shadow-[0_14px_34px_rgba(239,90,136,0.10)]"
+                >
+                  {content}
+                </Link>
               );
             })}
           </div>
@@ -331,15 +359,31 @@ export function FanUniverse() {
           <div className="grid grid-cols-3 gap-2">
             {missions.map((mission) => {
               const Icon = mission.icon;
-              return (
-                <Link
-                  key={mission.label}
-                  to={mission.label === 'FAN POST' ? '/fan' : '/videos'}
-                  className="focus-ring depth-card rounded-lg border border-cherry/20 bg-paper px-2 py-2.5 text-center shadow-[0_10px_24px_rgba(239,90,136,0.08)]"
-                >
+              const content = (
+                <>
                   <Icon aria-hidden className="mx-auto h-4 w-4 text-cherry" />
                   <p className="mt-1 text-[9px] font-semibold text-cherry">{mission.label}</p>
                   <p className="mt-0.5 text-[11px] font-semibold leading-4 text-ink">{mission.value}</p>
+                </>
+              );
+
+              return mission.external ? (
+                <a
+                  key={mission.label}
+                  href={mission.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="focus-ring depth-card rounded-lg border border-cherry/20 bg-paper px-2 py-2.5 text-center shadow-[0_10px_24px_rgba(239,90,136,0.08)]"
+                >
+                  {content}
+                </a>
+              ) : (
+                <Link
+                  key={mission.label}
+                  to={mission.href}
+                  className="focus-ring depth-card rounded-lg border border-cherry/20 bg-paper px-2 py-2.5 text-center shadow-[0_10px_24px_rgba(239,90,136,0.08)]"
+                >
+                  {content}
                 </Link>
               );
             })}
@@ -402,12 +446,12 @@ export function FanUniverse() {
                 </div>
               ))}
             </div>
-            <div className="mt-2 flex items-center gap-2 rounded-lg border border-cherry/20 bg-rosewash px-2 py-1.5">
+            <Link to="/fan" className="focus-ring mt-2 flex items-center gap-2 rounded-lg border border-cherry/20 bg-rosewash px-2 py-1.5">
               <span className="min-w-0 flex-1 text-[10px] font-bold text-ink/50">찬미에게 보내는 오늘의 한마디</span>
               <span className="inline-flex h-7 w-7 items-center justify-center rounded-lg bg-cherry text-paper">
                 <Send aria-hidden className="h-3.5 w-3.5" />
               </span>
-            </div>
+            </Link>
           </div>
 
           <div className="depth-card idol-shine min-w-[332px] snap-start rounded-lg border border-cherry/20 bg-paper p-3 shadow-[0_14px_34px_rgba(239,90,136,0.10)] lg:min-w-0">

@@ -7,6 +7,7 @@ import { GlobalStarRoom } from '../components/home/GlobalStarRoom';
 import { HeroSection } from '../components/home/HeroSection';
 import { LiveStudio } from '../components/home/LiveStudio';
 import { MediaPreview } from '../components/home/MediaPreview';
+import { ScheduleBoard } from '../components/home/ScheduleBoard';
 import { SceneQuickNav } from '../components/home/SceneQuickNav';
 import { SocialCards } from '../components/home/SocialCards';
 import { VideoPreview } from '../components/home/VideoPreview';
@@ -44,6 +45,10 @@ export default function HomePage() {
 
       <div id="studio" className="home-scene scene-reveal">
         <LiveStudio />
+      </div>
+
+      <div id="schedule" className="home-scene scene-reveal">
+        <ScheduleBoard />
       </div>
 
       <div id="pass" className="home-scene scene-reveal">

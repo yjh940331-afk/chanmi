@@ -1,4 +1,4 @@
-import { Home, Image, Instagram, Mail, Megaphone, Play, Radio, Sparkles, Users } from 'lucide-react';
+import { CalendarDays, Home, Image, Instagram, Mail, Megaphone, Play, Radio, Sparkles, Users } from 'lucide-react';
 import { NavLink } from 'react-router-dom';
 import { site } from '../../content/site';
 import { cn } from '../../lib/cn';
@@ -6,6 +6,7 @@ import { BrandMark } from './BrandMark';
 
 const pageLinks = [
   { label: '홈', href: '/', icon: Home },
+  { label: '스케줄', href: '/#schedule', icon: CalendarDays },
   { label: '사진', href: '/media', icon: Image },
   { label: '영상', href: '/videos', icon: Play },
   { label: '팬월', href: '/fan', icon: Users },

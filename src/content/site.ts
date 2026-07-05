@@ -30,6 +30,7 @@ export const site = {
 
 export const navItems = [
   { label: '홈', href: '/' },
+  { label: '스케줄', href: '/#schedule' },
   { label: '사진', href: '/media' },
   { label: '영상', href: '/videos' },
   { label: '팬월', href: '/fan' },

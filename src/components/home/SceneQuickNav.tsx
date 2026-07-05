@@ -1,10 +1,11 @@
 import { useEffect, useState } from 'react';
-import { Camera, Heart, Play, Radio, Sparkles, Star, Ticket } from 'lucide-react';
+import { CalendarDays, Camera, Heart, Play, Radio, Sparkles, Star, Ticket } from 'lucide-react';
 import { cn } from '../../lib/cn';
 
 const scenes = [
   { id: 'hero', label: 'TOP', icon: Sparkles },
   { id: 'studio', label: 'LIVE', icon: Radio },
+  { id: 'schedule', label: 'PLAN', icon: CalendarDays },
   { id: 'pass', label: 'PASS', icon: Ticket },
   { id: 'star', label: 'STAR', icon: Star },
   { id: 'media', label: 'CUT', icon: Camera },

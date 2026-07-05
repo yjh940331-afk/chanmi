@@ -13,6 +13,10 @@ export function mapFanPost(row: FanPostRow) {
 }
 
 export function clampNumber(value: string | null, fallback: number, min: number, max: number) {
+  if (value == null || value.trim() === '') {
+    return fallback;
+  }
+
   const parsed = Number(value);
 
   if (!Number.isFinite(parsed)) {
@@ -21,4 +25,3 @@ export function clampNumber(value: string | null, fallback: number, min: number,
 
   return Math.min(Math.max(Math.trunc(parsed), min), max);
 }
-

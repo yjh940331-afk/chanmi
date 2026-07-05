@@ -2,13 +2,14 @@ import { FormEvent, useCallback, useState } from 'react';
 import { Send, Upload } from 'lucide-react';
 import { createFanPost } from '../../lib/api';
 import { fanPostLimits, validateFanPostInput } from '../../lib/validators';
+import type { FanPost } from '../../types';
 import { Button } from '../ui/Button';
 import { Input } from '../ui/Input';
 import { Textarea } from '../ui/Textarea';
 import { TurnstileWidget } from './TurnstileWidget';
 
 interface FanPostFormProps {
-  onCreated?: () => void;
+  onCreated?: (post: FanPost) => void;
 }
 
 export function FanPostForm({ onCreated }: FanPostFormProps) {
@@ -35,7 +36,7 @@ export function FanPostForm({ onCreated }: FanPostFormProps) {
 
     setSubmitting(true);
     try {
-      await createFanPost({
+      const result = await createFanPost({
         nickname: nickname.trim(),
         message: message.trim(),
         turnstileToken,
@@ -45,7 +46,7 @@ export function FanPostForm({ onCreated }: FanPostFormProps) {
       setTurnstileToken('');
       setErrors({});
       setStatus('응원이 접수되었습니다. 관리자 확인 후 공개됩니다.');
-      onCreated?.();
+      onCreated?.(result.item);
     } catch (requestError) {
       setStatus(requestError instanceof Error ? requestError.message : '응원을 남기지 못했습니다.');
     } finally {
